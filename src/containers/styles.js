@@ -8,6 +8,16 @@ export const Logo = styled.img`
   height: 10%;
   width: 20%;
   object-fit: cover;
+
+  @media (max-width: 800px) {
+    width: 10%;
+    height: 5%;
+    padding: .5em;
+  }
+
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;
 
 export const LeftDiv = styled.div`
@@ -25,8 +35,19 @@ export const LeftDiv = styled.div`
   padding: 1em;
   gap: 1em;
   transition: all 0.3s ease; /* Adicionando transição para suavizar as mudanças */
-`;
 
+  @media (max-width: 1200px) {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    background: transparent;
+    z-index: 2;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+  }
+`;
 
 export const Title = styled.h1`
   margin: 0;
@@ -36,11 +57,16 @@ export const Desc = styled.p`
   font-size: 75%;
   text-align: center;
   margin: 0;
+
+  @media (max-width: 1200px) {
+    width: 80%;
+
+  }
 `
 
 export const Sep = styled.hr`
   width: 100%;
-  height: 2px; /* Ajuste a altura conforme necessário */
+  height: 1px;
   background: linear-gradient(to right, transparent, #252526, transparent);
   border: none;
   margin: 0;
@@ -68,25 +94,33 @@ export const RightDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Para esconder partes da imagem que ultrapassarem a div */
-  position: relative; /* Necessário para o posicionamento do elemento filho */
-  transition: opacity 0.3s ease; /* Adicionando transição de opacidade */
+  overflow: hidden;
+  position: relative;
+  transition: opacity 0.3s ease;
   
-  /* Esmaecer a imagem ao mudar */
   & > img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Para fazer a imagem cobrir a área da div */
     opacity: 1;
-    transition: opacity 0.3s ease; /* Adicionando transição de opacidade */
+    transition: opacity 0.3s ease; 
   }
 
   /* Faz a imagem desaparecer durante a transição */
   &.fade-out > img {
     opacity: 0;
   }
-`;
 
+  @media (max-width: 1200px) {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    background: transparent;
+    z-index: 1;
+    filter: brightness(0.2);
+  }
+`;
 
 export const Footer = styled.div`
   width: 100%;
@@ -100,6 +134,10 @@ export const Footer = styled.div`
   left: 0;
   background-color: black;
   overflow: hidden;
+
+  @media (max-width: 1200px) {
+    height: 20%;
+  }
 `;
 
 export const Scroll = styled.div`
@@ -122,10 +160,10 @@ export const Select = styled.div`
 `;
 
 export const Card = styled.div`
-  width: calc(90vw / 8); /* Usando calc() para dividir 100% por 8 */
+  width: calc(90vw / 8); 
   height: 100%;
   position: relative;
-  overflow: hidden; /* Para esconder partes da imagem que ultrapassarem a div */
+  overflow: hidden;
   
   &:hover {
     cursor: pointer;
@@ -144,11 +182,22 @@ export const Name = styled.div`
   left: 50%;
   transform: translate(-50%, 50%); /* Centralizando o texto */
   text-align: center;
-  transition: opacity 0.3s ease; /* Adicionando transição suave */
+  transition: opacity 0.3s ease; 
   
   /* Impede que o filtro do Card afete o Name */
   ${Card}:hover & {
     display: flex;
+  }
+
+  
+  @media (max-width: 800px) {
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+    padding: .5em;
+  }
+
+  @media (max-width: 650px) {
+    font-size: .5em;
   }
 `;
 

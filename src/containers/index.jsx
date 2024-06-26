@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import { LeftDiv, Title, Subtitle, Desc, Sep, Habilities, List, RightDiv, Footer, Card, Image, Name, Logo, Select, Scroll } from './styles'; // Verifique se os caminhos estão corretos
-import personagens from './personagens'; // Verifique se o caminho está correto
-import logoImg from '../img/jujutsu.png'; // Verifique se o caminho está correto
+import { LeftDiv, Title, Subtitle, Desc, Sep, Habilities, List, RightDiv, Footer, Card, Image, Name, Logo, Select, Scroll } from './styles';
+import personagens from './personagens';
+import logoImg from '../img/jujutsu.png';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -17,6 +17,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.2em;
     user-select: none;
     background: black;
+
+    @media (max-width: 1200px) {
+      font-size: 1em;
+    }
   }
 `;
 

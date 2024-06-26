@@ -104,7 +104,7 @@ const personagens = [
     nome: 'Mei Mei',
     card: meimeiCard,
     img: meimeiImg,
-    descricao: 'Ela é uma feiticeira jujutsu de grau 1 que trabalha de forma independente e apenas em troca de dinheiro. Ela também é a irmã mais velha de Ui Ui e foi senpai de Satoru Gojo e Suguru Geto durante seu tempo na Escola Jujutsu.',
+    descricao: 'É uma feiticeira jujutsu de grau 1 que trabalha de forma independente e apenas em troca de dinheiro. Ela também é a irmã mais velha de Ui Ui e foi senpai de Satoru Gojo e Suguru Geto durante seu tempo na Escola Jujutsu, sua habilidade lhe permite monitorar o espaço a sua volta através de seus passaros.',
     habilidade: 'Controle de corvos',
     expansão: '-'
   },
@@ -123,9 +123,10 @@ const personagens = [
     sobrenome: '',
     card: chosoCard,
     img: chosoImg,
-    descricao: 'Personagem central da história do filme "Jujutsu Kaisen 0", controla a maldição "Rika" considerada a Rainha das maldições, Yuta possui também a habilidade de copiar técnicas de outros feiticeiros, tendo usado por exemplo a fala amaldiçoada de Toge, Yuta foi um dosmaiores voluntarios na luta contra Sukuna, tendo até mesmo usado o corpo de Gojo depois de morto.',
+    descricao: 'Umas das 9 pinturas da morte e irmão de Itadori, Choso é um feto amaldiçoado que tem o controle de sangue, herdado de um dos 3 grandes Clãs de Jujutsu Kaisen, o Clã Kamo, no qual seu pai Noritoshi Kamo (um ancestral do aluno de Kyoto), na época com a mente de Kenjaku fazia parte',
     habilidade: 'Controle de sangue',
     habilidade2: 'Explosão de sangue',
+    expansão: '-',
   },
   
 ];
