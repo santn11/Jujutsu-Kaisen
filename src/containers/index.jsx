@@ -32,14 +32,13 @@ const ContentWrapper = styled.div`
 `;
 
 const AppLogo = styled(Logo)`
-  /* Exemplo de estilo específico para o logo */
-  top: 2%; /* Ajuste no posicionamento */
+  top: 2%;
 `;
 
 function Index() {
   const [startIndex, setStartIndex] = useState(0);
   const [selectedCharacter, setSelectedCharacter] = useState(personagens[0]);
-  const [fade, setFade] = useState(false); // Estado para controlar o efeito de fade
+  const [fade, setFade] = useState(false);
 
   const scrollLeft = () => {
     setStartIndex(prev => Math.max(prev - 1, 0));
@@ -54,11 +53,11 @@ function Index() {
   };
 
   const handleCardClick = (personagem) => {
-    setFade(true); // Ativa o efeito de fade-out
+    setFade(true); 
     setTimeout(() => {
       setSelectedCharacter(personagem);
-      setFade(false); // Desativa o efeito de fade-out após a transição
-    }, 300); // Tempo correspondente à transição (0.3s)
+      setFade(false); 
+    }, 300); 
   };
 
   return (
